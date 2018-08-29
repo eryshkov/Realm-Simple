@@ -30,7 +30,6 @@ class DBManager {
         
         try! database.write {
             database.add(object, update: true)
-            print("Added new object")
         }
     }
     

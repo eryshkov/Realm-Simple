@@ -11,7 +11,8 @@ import RealmSwift
 
 class secondViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
-    var currentItem: Item?
+    weak var currentItem: Item?
+    weak var tableView: UITableView?
     
     var items: Results<Item> {
         return DBManager.sharedInstance.getDataFromDB()
@@ -42,12 +43,18 @@ class secondViewController: UIViewController {
         }
         item.textString = textField.text!
         database.addData(object: item)
+        if let selectedIndexPath = tableView?.indexPathForSelectedRow {
+            tableView?.reloadRows(at: [selectedIndexPath], with: .none)
+        }
         navigationController?.popViewController(animated: true)
     }
     
     @IBAction func deleteButtonTapped(_ sender: UIButton) {
         if let item = currentItem {
             database.deleteFromDb(object: item)
+            if let selectedIndexPath = tableView?.indexPathForSelectedRow {
+                tableView?.reloadRows(at: [selectedIndexPath], with: .none)
+            }
             navigationController?.popViewController(animated: true)
         }
     }

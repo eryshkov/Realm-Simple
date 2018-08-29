@@ -24,10 +24,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        tableView.reloadData()
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -47,6 +43,7 @@ class ViewController: UIViewController {
             }
             
             dvc.currentItem = currentItem
+            dvc.tableView = tableView
         }
     }
     
