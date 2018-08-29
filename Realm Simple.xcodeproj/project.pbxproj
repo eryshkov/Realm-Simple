@@ -13,6 +13,9 @@
 		5CD69FB92136F8B900F5F142 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CD69FB82136F8B900F5F142 /* Assets.xcassets */; };
 		5CD69FBC2136F8B900F5F142 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CD69FBA2136F8B900F5F142 /* LaunchScreen.storyboard */; };
 		5CD69FC42136F91B00F5F142 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5CD69FC32136F91B00F5F142 /* .gitignore */; };
+		5CD69FC62137145700F5F142 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD69FC52137145700F5F142 /* secondViewController.swift */; };
+		5CD69FC82137170A00F5F142 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD69FC72137170A00F5F142 /* DBManager.swift */; };
+		5CD69FCA2137181100F5F142 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD69FC92137181100F5F142 /* Item.swift */; };
 		F12EB70B749E936B78718657 /* Pods_Realm_Simple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AE9E06D0BC86F0C62DC0F50 /* Pods_Realm_Simple.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +28,9 @@
 		5CD69FBB2136F8B900F5F142 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CD69FBD2136F8B900F5F142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CD69FC32136F91B00F5F142 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		5CD69FC52137145700F5F142 /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
+		5CD69FC72137170A00F5F142 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		5CD69FC92137181100F5F142 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		5D83D48CCA7F40F4FA3368C3 /* Pods-Realm Simple.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Realm Simple.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Realm Simple/Pods-Realm Simple.debug.xcconfig"; sourceTree = "<group>"; };
 		8AE9E06D0BC86F0C62DC0F50 /* Pods_Realm_Simple.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Realm_Simple.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D77E276F34CB4AA25448BAF5 /* Pods-Realm Simple.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Realm Simple.release.xcconfig"; path = "Pods/Target Support Files/Pods-Realm Simple/Pods-Realm Simple.release.xcconfig"; sourceTree = "<group>"; };
@@ -66,6 +72,9 @@
 			children = (
 				5CD69FB12136F8B100F5F142 /* AppDelegate.swift */,
 				5CD69FB32136F8B100F5F142 /* ViewController.swift */,
+				5CD69FC92137181100F5F142 /* Item.swift */,
+				5CD69FC72137170A00F5F142 /* DBManager.swift */,
+				5CD69FC52137145700F5F142 /* secondViewController.swift */,
 				5CD69FB52136F8B100F5F142 /* Main.storyboard */,
 				5CD69FB82136F8B900F5F142 /* Assets.xcassets */,
 				5CD69FBA2136F8B900F5F142 /* LaunchScreen.storyboard */,
@@ -166,16 +175,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Realm Simple/Pods-Realm Simple-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
@@ -190,15 +195,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Realm Simple-checkManifestLockResult.txt",
 			);
@@ -214,8 +215,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CD69FCA2137181100F5F142 /* Item.swift in Sources */,
 				5CD69FB42136F8B100F5F142 /* ViewController.swift in Sources */,
+				5CD69FC62137145700F5F142 /* secondViewController.swift in Sources */,
 				5CD69FB22136F8B100F5F142 /* AppDelegate.swift in Sources */,
+				5CD69FC82137170A00F5F142 /* DBManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +367,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = L2PMLV77L3;
 				INFOPLIST_FILE = "Realm Simple/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -384,6 +389,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = L2PMLV77L3;
 				INFOPLIST_FILE = "Realm Simple/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
