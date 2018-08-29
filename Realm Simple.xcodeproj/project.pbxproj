@@ -12,6 +12,7 @@
 		5CD69FB72136F8B100F5F142 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CD69FB52136F8B100F5F142 /* Main.storyboard */; };
 		5CD69FB92136F8B900F5F142 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CD69FB82136F8B900F5F142 /* Assets.xcassets */; };
 		5CD69FBC2136F8B900F5F142 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CD69FBA2136F8B900F5F142 /* LaunchScreen.storyboard */; };
+		5CD69FC42136F91B00F5F142 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5CD69FC32136F91B00F5F142 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		5CD69FB82136F8B900F5F142 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CD69FBB2136F8B900F5F142 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CD69FBD2136F8B900F5F142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CD69FC32136F91B00F5F142 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		5CD69FA52136F8B100F5F142 = {
 			isa = PBXGroup;
 			children = (
+				5CD69FC32136F91B00F5F142 /* .gitignore */,
 				5CD69FB02136F8B100F5F142 /* Realm Simple */,
 				5CD69FAF2136F8B100F5F142 /* Products */,
 			);
@@ -122,6 +125,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CD69FC42136F91B00F5F142 /* .gitignore in Resources */,
 				5CD69FBC2136F8B900F5F142 /* LaunchScreen.storyboard in Resources */,
 				5CD69FB92136F8B900F5F142 /* Assets.xcassets in Resources */,
 				5CD69FB72136F8B100F5F142 /* Main.storyboard in Resources */,
@@ -280,15 +284,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2EB4KC7497;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = L2PMLV77L3;
 				INFOPLIST_FILE = "Realm Simple/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ru.eugem.Realm-Simple";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.starapplic7.first1.Realm-Simple";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "fec117fc-2f2e-4cf2-adc5-1f59288062cd";
+				PROVISIONING_PROFILE_SPECIFIER = 8b1759d59c557b10982ce1246caf2d5a38c6a6c1;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,15 +304,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2EB4KC7497;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = L2PMLV77L3;
 				INFOPLIST_FILE = "Realm Simple/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ru.eugem.Realm-Simple";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.starapplic7.first1.Realm-Simple";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "fec117fc-2f2e-4cf2-adc5-1f59288062cd";
+				PROVISIONING_PROFILE_SPECIFIER = 8b1759d59c557b10982ce1246caf2d5a38c6a6c1;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
