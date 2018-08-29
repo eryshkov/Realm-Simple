@@ -70,7 +70,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Brp-jR-Z5o">
-                                <rect key="frame" x="0.0" y="281.5" width="375" height="104.5"/>
+                                <rect key="frame" x="0.0" y="80" width="375" height="104.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Text:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5U-Np-2vz">
                                         <rect key="frame" x="155.5" y="0.0" width="64.5" height="20.5"/>
@@ -105,17 +105,16 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="zBi-B1-Coq" firstAttribute="leading" secondItem="Brp-jR-Z5o" secondAttribute="leading" constant="16" id="S13-MU-nmR"/>
-                                    <constraint firstAttribute="trailing" secondItem="zBi-B1-Coq" secondAttribute="trailing" constant="16" id="nZg-45-Ur1"/>
+                                    <constraint firstItem="zBi-B1-Coq" firstAttribute="leading" secondItem="Brp-jR-Z5o" secondAttribute="leading" constant="16" id="1Tc-Dy-06b"/>
+                                    <constraint firstAttribute="trailing" secondItem="zBi-B1-Coq" secondAttribute="trailing" constant="16" id="wHS-AK-qcq"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Brp-jR-Z5o" firstAttribute="centerY" secondItem="gb8-rh-iiB" secondAttribute="centerY" id="F4t-aC-lkv"/>
-                            <constraint firstItem="Brp-jR-Z5o" firstAttribute="centerX" secondItem="gb8-rh-iiB" secondAttribute="centerX" id="IQf-zq-K6X"/>
-                            <constraint firstItem="Sbq-vr-HOT" firstAttribute="trailing" secondItem="Brp-jR-Z5o" secondAttribute="trailing" id="LMg-hh-NDc"/>
-                            <constraint firstItem="Brp-jR-Z5o" firstAttribute="leading" secondItem="Sbq-vr-HOT" secondAttribute="leading" id="etn-9i-ebg"/>
+                            <constraint firstItem="Brp-jR-Z5o" firstAttribute="top" secondItem="Sbq-vr-HOT" secondAttribute="top" constant="16" id="7B5-d3-bnc"/>
+                            <constraint firstItem="Sbq-vr-HOT" firstAttribute="trailing" secondItem="Brp-jR-Z5o" secondAttribute="trailing" id="FKr-QL-U3w"/>
+                            <constraint firstItem="Brp-jR-Z5o" firstAttribute="leading" secondItem="Sbq-vr-HOT" secondAttribute="leading" id="Fdn-4n-2jc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Sbq-vr-HOT"/>
                     </view>
